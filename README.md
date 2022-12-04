@@ -18,12 +18,13 @@ Some exercises will not need any external dependencies, and some will be run wit
 
 The repository is divided into exercise folders; each folder has a number in front to show which order they should be done. They go from the most basic to more advanced examples as you progress.
 
+> Be aware that, in some folders, there's also a `package.json`, if this is the case, run `npm install` inside the directory to install the packages
+
 0. **Assertions**: Exercises in this folder will show how to assert different types of expressions; it's meant to be executed with the default node `assert` library
 1. **Test suites**: Exercises here will show how to use test grouping to make tests easier to read, for now, you'll use only Node.js native test runner; the tests can be executed with `node --test <file-name>`
 2. **Test runners**: Here you'll need to run `npm install jest` inside de folder to install the Jest test runner. All subsequent testing can be done with the `npm test` command
 3. **Test doubles**: From now on, we'll be using Jest as the test runner. This directory has some more advanced testing cases to teach the use of test doubles
 4. **TDD**: This directory doesn't contain any code, only descriptions of functions and features you should create using the TDD approach.
-5. **React components**: A small extra set of exercises to show how to test React components.
 
 Besides that, each individual directory also has its own README file explaining more about its contents.
 

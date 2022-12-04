@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Happy path correctly renders a name 1`] = `
+<div>
+  <div>
+    <p>
+      Hello 
+      Lucas
+      !
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Happy path correctly renders default name 1`] = `
+<div>
+  <div>
+    <p>
+      Hello 
+      World
+      !
+    </p>
+  </div>
+</div>
+`;

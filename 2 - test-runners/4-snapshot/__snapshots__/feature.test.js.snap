@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Happy path should return the user with the given id from snapshot 1`] = `
+{
+  "age": 20,
+  "id": 1,
+  "name": "John",
+}
+`;
