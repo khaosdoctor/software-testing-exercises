@@ -6,6 +6,12 @@ let mocks = {
   createUser: jest.spyOn(UserController.prototype, 'createUser')
 }
 
+const fixture = {
+  id: 1,
+  name: 'John',
+  connectedAt: new Date('2022-01-01T00:00:00.000Z').getTime()
+}
+
 describe('include', () => {
   beforeAll(() => {
     jest.useFakeTimers()
@@ -19,18 +25,10 @@ describe('include', () => {
 
   describe('include', () => {
     it('should return a user', async () => {
-      mocks.getUser.mockResolvedValueOnce({
-        id: 1,
-        name: 'John',
-        connectedAt: Date.now()
-      })
+      mocks.getUser.mockResolvedValueOnce(fixture)
 
       const user = await include(1, 'John')
-      expect(user).toStrictEqual({
-        id: 1,
-        name: 'John',
-        connectedAt: new Date('2022-01-01T00:00:00.000Z').getTime()
-      })
+      expect(user).toStrictEqual(fixture)
       expect(mocks.getUser).toHaveBeenCalledTimes(1)
     })
 
@@ -42,16 +40,8 @@ describe('include', () => {
 
     it('should create user when there is no user', async () => {
       mocks.getUser.mockRejectedValueOnce(new Error('User not found'))
-      mocks.createUser.mockResolvedValueOnce({
-        id: 1,
-        name: 'John',
-        connectedAt: Date.now()
-      })
-      expect(include(1, 'John')).resolves.toStrictEqual({
-        id: 1,
-        name: 'John',
-        connectedAt: new Date('2022-01-01T00:00:00.000Z').getTime()
-      })
+      mocks.createUser.mockResolvedValueOnce(fixture)
+      expect(include(1, 'John')).resolves.toStrictEqual(fixture)
       expect(mocks.getUser).toHaveBeenCalled()
       expect(mocks.createUser).toHaveBeenCalled()
     })
