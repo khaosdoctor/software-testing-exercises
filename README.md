@@ -6,7 +6,7 @@
 
 This is the side material for my workshop on software testing for the Microsoft Reactor Stockholm sessions for beginners. It's a collection of small JavaScript exercises to practice software testing. The activities are designed to be simple and easy to understand so you can focus on the testing part.
 
-You can check my small slide presentation [here](https://slides.lsantos.dev/software-testing-with-javascript) (in English). There are not many slides because the session was a hands-on workshop, so I recommend you try the exercises yourself because the slides will only provide some context on concepts and initial understanding.
+You can check my small slide presentation [here](https://lsantos.dev/js-software-tests) (in English). There are not many slides because the session was a hands-on workshop, so I recommend you try the exercises yourself because the slides will only provide some context on concepts and initial understanding.
 
 ## Environment
 
@@ -24,9 +24,7 @@ The repository is divided into exercise folders; each folder has a number in fro
 1. **Test suites**: Exercises here will show how to use test grouping to make tests easier to read, for now, you'll use only Node.js native test runner; the tests can be executed with `node --test <file-name>`
 2. **Test runners**: Here you'll need to run `npm install jest` inside de folder to install the Jest test runner. All subsequent testing can be done with the `npm test` command
 3. **Test doubles**: From now on, we'll be using Jest as the test runner. This directory has some more advanced testing cases to teach the use of test doubles
-4. **TDD**: This directory doesn't contain any code, only descriptions of functions and features you should create using the TDD approach.
-
-Besides that, each individual directory also has its own README file explaining more about its contents.
+4. **TDD**: This directory contains a simple code, but the idea is to get the descriptions of functions and features you should create using the TDD approach in the challenge docs.
 
 The solved exercises can be seen in the `resolved` branch.
 
