@@ -16,6 +16,8 @@ Some exercises will not need any external dependencies, and some will be run wit
 
 ## How to use the repository
 
+Your journey starts in this branch.
+
 The repository is divided into exercise folders; each folder has a number in front to show which order they should be done. They go from the most basic to more advanced examples as you progress.
 
 > Be aware that, in some folders, there's also a `package.json`, if this is the case, run `npm install` inside the directory to install the packages
