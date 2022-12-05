@@ -30,6 +30,10 @@ Besides that, each individual directory also has its own README file explaining 
 
 The solved exercises can be seen in the `resolved` branch.
 
+### Challenges
+
+Challenges are sets of questions that will defy your knowledge, they don't have an answer in the `resolved` branch which means you'll have to do it by yourself! Good luck.
+
 ## Got more exercises?
 
 If you want to contribute with more exercises and add more tests, feel free to do so opening a PR with your new test files, just make sure that they're following the same code conventions as the other files.
